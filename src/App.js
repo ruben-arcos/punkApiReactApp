@@ -1,10 +1,10 @@
-
 import './App.css';
+import Beers from './components/beers'
 
 function App() {
   return (
     <div className="App">
-      Hello world
+      <Beers />
     </div>
   );
 }

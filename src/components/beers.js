@@ -38,11 +38,12 @@ export default class beers extends Component {
 
   render() {
     // to see life cycle happen
-    console.log("render", )
+    console.log("render")
+    // parent components
     return (
-        <div>
-            <h1>everything beers</h1>
-            <ul>
+        <div className="container">
+            <h1 className="mainTitle">BrewBliss</h1>
+            <ul className="allBeers">
                 {this.state.beers.map( (beer) => {
                     return <Beer beer={beer} />
                 })}
